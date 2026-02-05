@@ -1,4 +1,4 @@
-# 🕵️ Anti-Money Laundering (AML) Detection using Graph Neural Networks
+# Anti-Money Laundering (AML) Detection using Graph Neural Networks
 
 ## 🚨 The Problem
 Traditional fraud detection systems analyze transactions in isolation (e.g., "Is this amount too high?"). Sophisticated money launderers evade this by **structuring** payments—dispersing funds through networks of thousands of disposable "mule" accounts. To catch them, we cannot just look at the *node*; we must look at the *graph*.
