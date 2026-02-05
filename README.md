@@ -26,6 +26,12 @@ The model significantly outperformed non-graph baselines by leveraging topologic
 ![t-SNE Plot](images/t-sne_plot.png)
 *Figure 2: t-SNE projection of the learned 128-dimensional embeddings. The clear separation between Illicit (Red) and Licit (Blue) clusters proves the model learned to distinguish semantic patterns in the graph structure.*
 
+## 🧠 Interpretability (Why it works)
+To ensure the model is not a "black box," we analyzed which features contributed most to the fraud detection logic.
+
+![Feature Importance](images/feature_importance.png)
+*Figure 3: Top 10 most influential features. Notably, features **157, 159, and 90** are **aggregated neighbor features** (e.g., average volume of incoming neighbors), proving that the model is successfully using the graph topology to make decisions, rather than relying solely on individual transaction metadata.*
+
 ## 🛠️ Tech Stack
 * **Deep Learning:** PyTorch, PyTorch Geometric
 * **Graph Analysis:** NetworkX (k-hop subgraph extraction)
