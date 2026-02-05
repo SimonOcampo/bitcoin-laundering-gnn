@@ -11,7 +11,7 @@ I engineered a **Graph Neural Network (GraphSAGE)** pipeline to detect illicit B
 
 ## 📸 The "Smoking Gun"
 **Figure 1: High-Volume Laundering Hub (Tx 30179316)**
-![Network Graph](images/real_money_shot.jpg)
+![Network Graph](images/real_money_shot.png)
 *Visualization of a detected 'Kingpin' node. The GNN flagged this node (Red) not due to its direct features, but due to its structural role as a central distributor to hundreds of anonymous 'mule' wallets (Grey), revealing a classic 'layering' topology.*
 
 ## 📊 Results & Performance
@@ -23,7 +23,7 @@ The model significantly outperformed non-graph baselines by leveraging topologic
 | **Precision** | **51.0%** | ~1 out of 2 alerts is real fraud (Excellent for AML contexts). |
 
 ### Latent Space Visualization
-![t-SNE Plot](images/t-sne_plot.png)
+![t-SNE Plot](images/t-SNE.png)
 *Figure 2: t-SNE projection of the learned 128-dimensional embeddings. The clear separation between Illicit (Red) and Licit (Blue) clusters proves the model learned to distinguish semantic patterns in the graph structure.*
 
 ## 🛠️ Tech Stack
